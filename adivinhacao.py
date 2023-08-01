@@ -8,7 +8,7 @@ total_de_tentativas = 3
 rodada = 1
 
 while rodada <= total_de_tentativas:
-    print("Tentativa {} de {}.".format(rodada, total_de_tentativas))
+    print(f"Tentativa {rodada} de {total_de_tentativas}.")
 
     chute = int(input("Digite número entre 1 e 100: "))
     
