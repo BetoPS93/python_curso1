@@ -1,4 +1,4 @@
-from sympy import false, true
+from sympy import IndexedBase, LessThan, false, true
 
 
 def jogar():
@@ -9,9 +9,19 @@ def jogar():
     palavra_secreta = "banana"
 
     enforcou = False
-    acertou = True
+    acertou = False
 
     while not enforcou and not acertou:
+
+        chute = input("Qual letra? ")
+        chute = chute.strip()
+
+        index = 0
+        for letra in palavra_secreta:
+            if chute.upper() == letra.upper():
+                print(f"Encontrei a letra {chute} na posição {index}")
+            index = index + 1
+
         print("jogando...")
 
 
